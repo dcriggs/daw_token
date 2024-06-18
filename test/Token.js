@@ -20,19 +20,19 @@ describe("Token", () => {
     const totalSupply = tokens('1000000')
 
     it("has correct name", async () => {
-      expect(await token.name()).to.equal("Dawson Is Cool Token");
+      expect(await token.name()).to.equal(name);
     });
 
     it("has correct symbol", async () => {
-      expect(await token.symbol()).to.equal("DAW");
+      expect(await token.symbol()).to.equal(symbol);
     });
 
     it("has correct decimals", async () => {
-      expect(await token.decimals()).to.equal("18");
+      expect(await token.decimals()).to.equal(decimals);
     });
 
     it("has correct total supply", async () => {
-      expect(await token.totalSupply()).to.equal(tokens("1000000"));
+      expect(await token.totalSupply()).to.equal(totalSupply);
     });
   });
 });
